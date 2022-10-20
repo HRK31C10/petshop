@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetShop Recanto dos Pets</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
+</head>
+<body>
+<header>
+    <div class="container">
+        <a href="/">PetShop Recanto dos Pets</a>
+        <form method="GET" action="/search">
+            <input type="search" name="q" placeholder="Pesquise por raça" />
+        </form>
+    </div>
+</header>
+<nav>
+    <ul>
+        <li class="{{#menu.all}}active{{/menu.all}}"><a href="/">Todos</a></li>
+        <li class="{{#menu.cachorro}}active{{/menu.cachorro}}"><a href="/cachorros">Cachorros</a></li>
+        <li class="{{#menu.gatos}}active{{/menu.gatos}}"><a href="/gatos">Gatos</a></li>
+        <li class="{{#menu.peixe}}active{{/menu.peixe}}"><a href="/peixes">Peixes</a></li>
+    </ul>
+</nav>
